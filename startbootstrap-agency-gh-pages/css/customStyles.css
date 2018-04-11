@@ -1,0 +1,13 @@
+/* Custom Styles for Outsiders */
+
+/* Please add all new styles here. Do not make edits to the bootstrap.css file as
+this can cause some really strange issues with the styling.
+ */
+
+.powerImage{
+    border-radius: 10px;
+}
+
+.whoWeAreList{
+    text-align: left;
+}

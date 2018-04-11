@@ -74,7 +74,7 @@ section h3.section-subheading {
 /* Modified */
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #509e2f ; /*important taken out*/
-  border-color: #509e2f /*important taken out*/
+  border-color: #509e2f; /*important taken out*/
   color: white;
 }
 
