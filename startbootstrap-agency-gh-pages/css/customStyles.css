@@ -19,3 +19,20 @@ this can cause some really strange issues with the styling.
 .backstoryText {
   text-align: justify;
 }
+
+#intro {
+  text-align: justify;
+  font-size: 14pt;
+}
+
+#recruit {
+  text-align: center;
+}
+
+#motherBase .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  cursor: pointer;
+}
