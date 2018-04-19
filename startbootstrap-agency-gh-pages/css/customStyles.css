@@ -11,9 +11,20 @@ this can cause some really strange issues with the styling.
 .whoWeAreList{
     text-align: left;
 }
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #509e2f !important;
+  border-color: #509e2f !important;
+  color: white;
+}
 
+/* Modified */
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(80, 158, 47, 0.5); /*important taken out*/
+}
 
+.btn-primary:active:focus{
 
+}
 .backstoryText {
   text-align: justify;
 }
