@@ -65,3 +65,7 @@ this can cause some really strange issues with the styling.
   margin-right: auto;
   width: 100%;
 }
+
+#mainNav .navbar-toggler {
+  background-color: #c4d600;
+}
