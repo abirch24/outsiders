@@ -43,10 +43,76 @@ this can cause some really strange issues with the styling.
   text-align: center;
 }
 .teamPicture img{
+  padding-bottom: 20px;
   width: 100%;
 }
 
+.placeholder {
+  text-align: center;
+}
 
+.placeholder img {
+  display: block;
+  margin: 0px auto;
+  width: 75%;
+}
+
+
+.date {
+  background-color: rgb(2, 56, 68);
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 48pt;
+  display: block;
+  margin: 0px auto;
+}
+
+.portfolioImage {
+  width: 500px;
+  height: 500px;
+}
+
+#events {
+  font-size: 24pt;
+  padding-top: 80px;
+}
+
+#event1 {
+  padding: 20px;
+  background-color: rgb(196, 214, 0);
+
+}
+#event2 {
+  padding: 20px;
+  background-color: rgb(4, 106, 56);
+}
+#event3 {
+  padding: 20px;
+  background-color: rgb(0, 133, 120);
+
+}
+#event4 {
+  padding: 20px;
+  background-color: rgb(2, 56, 68);
+}
+
+
+#call {
+  background-color: rgb(80, 158, 7);
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+#place {
+  font-size: 24pt;
+}
+
+#time {
+  font-size: 18pt;
+}
 
 #intro {
   text-align: justify;
@@ -66,12 +132,19 @@ this can cause some really strange issues with the styling.
 }
 
 #motherBaseImage {
-  width: 600px;
+  width: 400px;
   height: 400px;
+  display: block;
+  margin: 0px auto;
 }
 
 #logo {
   width: 100px;
+}
+
+#teamBackground {
+  background-color: rgba(0, 133, 120, 1.0);
+  padding: 50px;
 }
 
 #titleLogo {
@@ -83,6 +156,14 @@ this can cause some really strange issues with the styling.
 
 #mainNav .navbar-toggler {
   background-color: #c4d600;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
 }
 
 section#contact {
