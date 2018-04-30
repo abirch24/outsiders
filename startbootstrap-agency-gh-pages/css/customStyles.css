@@ -4,6 +4,12 @@
 this can cause some really strange issues with the styling.
  */
 
+ header.masthead {
+   background-image: url("../img/other/girlsBackground.jpg");
+
+ }
+
+
 .powerImage{
     border-radius: 10px;
 }
@@ -32,6 +38,15 @@ this can cause some really strange issues with the styling.
 .intro-heading {
   font-size: 48pt !important;
 }
+
+.teamPicture {
+  text-align: center;
+}
+.teamPicture img{
+  width: 100%;
+}
+
+
 
 #intro {
   text-align: justify;
@@ -68,4 +83,10 @@ this can cause some really strange issues with the styling.
 
 #mainNav .navbar-toggler {
   background-color: #c4d600;
+}
+
+section#contact {
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
 }
