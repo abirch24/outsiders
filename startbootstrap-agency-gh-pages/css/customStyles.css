@@ -5,8 +5,39 @@ this can cause some really strange issues with the styling.
  */
 
  header.masthead {
-   background-image: url("../img/other/girlsBackground.jpg");
+   background-image: url("../img/other/wetlands.jpg");
 
+ }
+
+ @media (min-width: 768px) {
+   header.masthead .intro-text {
+     padding-top: 250px;
+     padding-bottom: 200px;
+   }
+   header.masthead .intro-text .intro-lead-in {
+     font-size: 40px;
+     font-style: italic;
+     line-height: 40px;
+     margin-bottom: 25px;
+     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   }
+   header.masthead .intro-text .intro-heading {
+     color: #046a38;
+     font-size: 75px;
+     font-weight: 700;
+     line-height: 75px;
+     margin-bottom: 50px;
+     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   }
+ }
+
+ header.masthead .intro-text .intro-heading {
+   color: rgb(46, 243, 237);
+   font-size: 96px!important;
+   font-weight: 700;
+   line-height: 85px;
+   margin-bottom: 50px;
+   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
  }
 
 
@@ -61,13 +92,15 @@ this can cause some really strange issues with the styling.
 .date {
   background-color: rgb(2, 56, 68);
   border-radius: 50%;
-  height: 500px;
-  width: 500px;
+  height: 250px;
+  width: 250px;
   text-align: center;
-  padding-top: 150px;
   font-size: 48pt;
   display: block;
   margin: 0px auto;
+  padding: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .portfolioImage {
@@ -101,9 +134,16 @@ this can cause some really strange issues with the styling.
 
 
 #call {
-  background-color: rgb(80, 158, 7);
+  background-image: url("../img/other/bench.jpg");
   color: rgb(250, 250, 250);
   text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #place {
@@ -168,6 +208,13 @@ this can cause some really strange issues with the styling.
 
 section#contact {
   background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#contact {
+  background-color: #212529;
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
 }
