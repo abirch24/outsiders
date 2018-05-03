@@ -108,18 +108,28 @@ this can cause some really strange issues with the styling.
   width: 75%;
 }
 
-.date {
-  background-color: rgb(2, 56, 68);
+.inner {
+  background: #a1ff87;
+  background-clip: content-box;
+  border: 10px solid #a1ff87;
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  text-align: center;
-  font-size: 48pt;
+  height: 200px;
+  padding: 5px;
+  width: 220px;
+  height: 220px;
   display: block;
   margin: 0px auto;
+  margin-bottom: 50px;
+  /* background-color: rgb(80, 158, 47);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 50px;
   padding: 100px;
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 100px; */
 }
 
 .portfolioImage {
@@ -257,6 +267,18 @@ this can cause some really strange issues with the styling.
 
 #aboutSubText {
   color: white !important;
+}
+
+#firstRow {
+  padding-right: 18%;
+}
+
+#secondRow {
+  padding-left: 15%;
+}
+
+#thirdRow {
+  padding-right: 18%;
 }
 
 section#contact {
