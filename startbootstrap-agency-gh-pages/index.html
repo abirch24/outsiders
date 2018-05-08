@@ -23,6 +23,7 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
     <link rel="stylesheet" href="css/customStyles.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!--<link href="css/agency.min.css" rel="stylesheet">-->
 
@@ -74,7 +75,7 @@
         <div class="intro-text">
           <div class = "row no-gutters">
             <div class = "col-md-4">
-              <img id = "introLogo" src = "img/logos/logo.png">
+              <img id = "introLogo" src = "img/logos/logoOutline.png">
             </div>
             <div class = "col-md-8">
               <div class="intro-heading text-uppercase">Join us in our fight <br> to preserve the <br>wetlands </div>
@@ -88,39 +89,49 @@
 
     <!-- Services -->
     <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our fight</h2>
-            <h3 id = "aboutSubText" class="section-subheading text-muted">Battling corporate greed</h3>
-          </div>
-        </div>
-        <div class ="row text-center">
-          <div class ="col-md-6">
-            <p id = "intro"> Midnight Industries has recently begun plans to bulldoze the wetlands in
-            favor of commercial development. This act is viewed by the Outsiders as an attack on our environmental freedoms and
-            our attempts at culling the rate of climate impact due to heavy development.
-            <br>
-            As Outsiders we understand that this quest for expansion is a money grab tactic. Midnight
-            Industries has put out propaganda to influence the minds of the people. Midnight Industries
-            claims that the development is good for economic growth, the newly developed buildings will
-            be high priced luxury apartments, with an “natural and beautiful views” selling point which
-            only the wealthy can afford.
-            <br>
-            </p>
-          </div>
-          <div class = "col-md-6">
-          </div>
-        </div>
-        <br>
-        <br>
-        <h3 id = "recruit">
-          We need your help!  No one is going to give us a say unless we stand up and stand together. So help us gather our voice and make a stand,
-        and as one say “No!”
-        </h3>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">Our fight</h2>
+                      <h3 id = "aboutSubText" class="section-subheading text-muted">Battling corporate greed</h3>
+                    </div>
+                </div>
+                <h1 class = "fight"> Midnight Industries has begun plans to bulldoze the wetlands for commercial development </h1>
+                <h2 class = "fight">  This act is viewed by the Outsiders as an attack on our environmental freedoms </h2>
+                <h3 id = "recruit">
+                  We need your help!  No one is going to give us a say unless we stand up and stand together. So help us gather our voice and make a stand,
+                  and as one say “No!”
+                </h3>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <img class="d-block w-100" src="..." alt="Second slide">
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
     </section>
-
 
 
     <!-- Call to Action-->
@@ -188,7 +199,7 @@
 
     </section>
 
-    <!-- Portfolio Grid -->
+    <!-- Portfolio Grid
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
@@ -263,96 +274,88 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>  -->
 
-
-    <!-- About
-    <section id="about">
-      <div class="container">
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Timeline</h2>
-            <h3 class="section-subheading text-muted">Follow the courses of events that make up our journey</h3>
+            <h2 class="section-heading text-uppercase">YOU can help!</h2>
+            <h3 class="section-subheading text-muted">Participate at one or all of our nodes</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 26, 2018</h4>
-                    <h4 class="subheading">Threat Detected</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Midnight Industries, a construction company sent from the dreaded Estalishment cooporation, has declared they are making
-                                          plans to bulldoze the wetlands for commercial development</p>
+
+        <div id = "motherBase">
+          <div class="row" id = "portfolioRow">
+            <div class="col-md-12 col-sm-12 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                <img id = "motherBaseImage" class="img-fluid" src="img/portfolio/baseIcon.png" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Motherbase</h4>
+                <p class="text-muted">The Control Center</p>
+              </div>
+            </div>
+            <div class = "col-md-6 col-sm-6 portfolio-item">
+             <div class = "row">
+               <div class = "col-lg-4">
+                <div class = "nodes" id = "node2">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                          <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/missionIcon.png" alt="">
+                    </a>
+
+                    <div class="portfolio-caption">
+                      <h4 class = "nodeText">Espionage</h4>
+                      <p class="text-muted">Be our Spy</p>
+                    </div>
                 </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>April 13, 2018</h4>
-                    <h4 class="subheading">Outsiders Are Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">We as individuals are being pushed out of our communities leaving us with fading memories of
-                                          a place that was once ours.  Our home's, space, and land are being overtaken by corporate
-                                          companies, wealthier communities, and those that don’t see or hear us.
-                                          The Outsiders are here to diversify the voices and uplift the uproar of environmental change
-                                          through action.</p>
-                  </div>
+              </div>
+              <div class = "col-lg-4">
+                <div class = "nodes" id = "node3">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                          <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/posterIcon.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                      <h4 class = "nodeText">Posters</h4>
+                      <p class="text-muted">Raise your Voice</p>
+                    </div>
                 </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              </div>
+              <div class = "col-lg-4">
+                <div class = "nodes" id = "node1">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                          <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/plantingIcon.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                      <h4 class = "nodeText">Plant Center</h4>
+                      <p class="text-muted">Pot a Plant</p>
+                    </div>
                 </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>April 26, 2018</h4>
-                    <h4 class="subheading">Hero's Call</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">We need your help. Recruitment starts now, look for our media campaign around the UW Bothell campus,
-                                          and follow our plans on Instgram/Twitter</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>May 31, 2018</h4>
-                    <h4 class="subheading">Battle Stations!</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted"> The day we fight back! Meet us at one of our node locations to resist Midnight Industries and fight for the
-                                          wetlands. Join us in one unified voice that will rise above climate injustice</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>JOIN
-                    <br>OUR UNIFYING
-                    <br>VOICE</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Team -->
     <div id = "teamBackground">
@@ -740,7 +743,8 @@
     <script src="js/customBehavior.js"></script>
     <script src="js/agency.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </body>
 

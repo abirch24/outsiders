@@ -3,11 +3,20 @@
 /* Please add all new styles here. Do not make edits to the bootstrap.css file as
 this can cause some really strange issues with the styling.
  */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-weight: 200;
+   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ }
 
  header.masthead {
    text-align: center;
    color: white;
-   background-image: url("../img/other/wetlands.jpg");
+   background-image: url("../img/other/background1.png");
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-position: center center;
@@ -21,22 +30,23 @@ this can cause some really strange issues with the styling.
  @media (min-width: 768px) {
    header.masthead .intro-text {
      /* Both image and text */
-     padding-top: 110px;
+     padding-top: 100px;
    }
 
    header.masthead .intro-text img{
-     padding-top: 200px;
+     padding-top: 20px;
+     padding-bottom: 0px;
    }
 
    header.masthead .intro-text .intro-lead-in {
      text-align: left;
      font-size: 40px;
      font-weight: 800;
-     font-style: italic;
+     font-style: normal;
      line-height: 40px;
      margin-top: 0px;
      margin-bottom: 25px;
-     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    }
    header.masthead .intro-text .intro-heading {
      color: #046a38;
@@ -50,15 +60,20 @@ this can cause some really strange issues with the styling.
 
  header.masthead .intro-text .intro-heading {
    /* Just text */
-   padding-top: 150px;
-   padding-right: 50px;
+   padding-top: 200px;
+   padding-right: 70px;
    color: white;
-   font-size: 100px!important;
+   font-size: 115px!important;
    text-align: left;
    font-weight: 700;
    line-height: 100px;
    margin-bottom: 0px;
    font-family: 'Sans Serif', 'Impact', Helvetica, Arial, sans-serif;
+ }
+
+ .section-heading {
+   font-family: 'Sans Serif', 'Impact', Helvetica, Arial, sans-serif;
+   font-size: 48pt !important;
  }
 
 .powerImage{
@@ -69,8 +84,8 @@ this can cause some really strange issues with the styling.
     text-align: left;
 }
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #509e2f !important;
-  border-color: #509e2f !important;
+  background-color: #046a38 !important;
+  border-color: #046a38 !important;
   color: white;
 }
 
@@ -79,11 +94,21 @@ this can cause some really strange issues with the styling.
   box-shadow: 0 0 0 0.2rem rgba(80, 158, 47, 0.5); /*important taken out*/
 }
 
-.btn-primary:active:focus{
-
+.btn-primary {
+  background-color: #C4D600;
+  border-color: #C4D600;
 }
+
 .backstoryText {
   text-align: justify;
+}
+
+
+
+/* #intro */
+.fight {
+  text-align: left;
+  color: rgb(2, 56, 68);
 }
 
 .intro-heading {
@@ -120,16 +145,6 @@ this can cause some really strange issues with the styling.
   display: block;
   margin: 0px auto;
   margin-bottom: 50px;
-  /* background-color: rgb(80, 158, 47);
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  display: block;
-  margin: 0px auto;
-  margin-bottom: 50px;
-  padding: 100px;
-  padding-bottom: 100px;
-  padding-top: 100px; */
 }
 
 .portfolioImage {
@@ -146,6 +161,20 @@ this can cause some really strange issues with the styling.
   padding-right: 0;
   padding-left: 0;
 }
+
+.nodes {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  padding-top: 90px;
+  cursor: pointer;
+}
+
+.nodeText {
+  font-size: 12pt;
+}
+
+
 
 #events {
   font-size: 24pt;
@@ -185,6 +214,10 @@ this can cause some really strange issues with the styling.
   background-size: cover;
 }
 
+#girlsPortrait {
+  width: 80%;
+}
+
 #place {
   font-size: 24pt;
 }
@@ -193,17 +226,10 @@ this can cause some really strange issues with the styling.
   font-size: 18pt;
 }
 
-#intro {
-  text-align: justify;
-  font-size: 16pt;
-  color: white;
-}
-
 #recruit {
   text-align: center;
   color: white;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7)
 }
 
 #motherBase .portfolio-item .portfolio-link {
@@ -238,16 +264,30 @@ this can cause some really strange issues with the styling.
 }*/
 
 #introLogo {
-  width: 115%;
+  width: 110%;
   display: block;
   text-align: left;
   margin-top: 0px;
+  margin-bottom: 0px;
   padding-top: 0px;
 
 }
 
 #mainNav .navbar-toggler {
   background-color: #c4d600;
+}
+
+#portfolio {
+  background-image: url("../img/other/nodeBackgroundWhite.png");
+  background-color: rgba(245, 245, 245);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 #portfolio .portfolio-item .portfolio-caption {
@@ -258,12 +298,31 @@ this can cause some really strange issues with the styling.
   background-color: #fff;
 }
 
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolioRow {
+  margin-right: 100px;
+}
+
 #services {
-  background-image: url("../img/other/girls.png");
+  background-image: url("../img/other/aboutBackground.png");
+  background-color: rgba(245, 245, 245);
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
+
 
 #aboutSubText {
   color: white !important;
