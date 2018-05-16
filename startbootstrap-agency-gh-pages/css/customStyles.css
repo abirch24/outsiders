@@ -16,7 +16,7 @@ this can cause some really strange issues with the styling.
  header.masthead {
    text-align: center;
    color: white;
-   background-image: url("../img/other/background1.png");
+   background-image: url("../img/other/wetlands1.png");
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-position: center center;
@@ -24,7 +24,6 @@ this can cause some really strange issues with the styling.
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-
  }
 
  @media (min-width: 768px) {
@@ -60,10 +59,10 @@ this can cause some really strange issues with the styling.
 
  header.masthead .intro-text .intro-heading {
    /* Just text */
-   padding-top: 200px;
+   padding-top: 175px;
    padding-right: 70px;
    color: white;
-   font-size: 115px!important;
+   font-size: 100px!important;
    text-align: left;
    font-weight: 700;
    line-height: 100px;
@@ -71,9 +70,18 @@ this can cause some really strange issues with the styling.
    font-family: 'Sans Serif', 'Impact', Helvetica, Arial, sans-serif;
  }
 
+ .navbar {
+   position: fixed !important;
+   margin-bottom: 0px;
+ }
+
+.navbar-nav {
+  float: right !important;
+}
+
  .section-heading {
    font-family: 'Sans Serif', 'Impact', Helvetica, Arial, sans-serif;
-   font-size: 48pt !important;
+   font-size: 72pt !important;
  }
 
 .powerImage{
@@ -95,20 +103,17 @@ this can cause some really strange issues with the styling.
 }
 
 .btn-primary {
-  background-color: #C4D600;
-  border-color: #C4D600;
+  background-color: #C4D600 !important;
+  border-color: #C4D600 !important;
 }
 
 .backstoryText {
   text-align: justify;
 }
 
-
-
-/* #intro */
-.fight {
-  text-align: left;
-  color: rgb(2, 56, 68);
+.jumbotron {
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .intro-heading {
@@ -134,22 +139,35 @@ this can cause some really strange issues with the styling.
 }
 
 .inner {
-  background: #a1ff87;
+  background: #C4D600;
   background-clip: content-box;
-  border: 10px solid #a1ff87;
+  border: 10px solid #C4D600;
   border-radius: 50%;
-  height: 200px;
-  padding: 5px;
-  width: 220px;
-  height: 220px;
+  padding: 10px;
   display: block;
   margin: 0px auto;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.intro {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+.nodeVideos {
+  width: 600px;
+  position: absolute;
+  margin: 0px auto;
 }
 
 .portfolioImage {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
 }
 
 .no-gutter {
@@ -174,7 +192,9 @@ this can cause some really strange issues with the styling.
   font-size: 12pt;
 }
 
-
+#aboutSubText {
+  margin-bottom: 5px;
+}
 
 #events {
   font-size: 24pt;
@@ -202,7 +222,7 @@ this can cause some really strange issues with the styling.
 
 
 #call {
-  background-image: url("../img/other/bench.jpg");
+  background-image: url("../img/other/boardwalk.png");
   color: rgb(250, 250, 250);
   text-align: center;
   background-repeat: no-repeat;
@@ -214,8 +234,20 @@ this can cause some really strange issues with the styling.
   background-size: cover;
 }
 
+
+#fight {
+  text-align: justify;
+  color: white;
+  padding: 5px;
+  margin: 0px auto;
+}
+
 #girlsPortrait {
   width: 80%;
+}
+
+#join {
+  font-weight: 15px;
 }
 
 #place {
@@ -224,6 +256,16 @@ this can cause some really strange issues with the styling.
 
 #time {
   font-size: 18pt;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
 }
 
 #recruit {
@@ -251,30 +293,40 @@ this can cause some really strange issues with the styling.
   width: 100px;
 }
 
+#swipeArrows {
+  display: block !important;
+  margin: 0 auto !important;
+}
+
 #teamBackground {
   background-color: rgba(0, 133, 120, 1.0);
   padding: 50px;
 }
 
-/*#titleLogo {
+#ourStory {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}*/
+  margin: 0px auto;
+  width: 800px;
+}
 
 #introLogo {
   width: 110%;
   display: block;
   text-align: left;
+  margin-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
-
 }
 
 #mainNav .navbar-toggler {
   background-color: #c4d600;
+}
+
+#ourFight {
+  color: white;
+  text-align: right;
+  font-size: 48pt;
 }
 
 #portfolio {
@@ -287,7 +339,6 @@ this can cause some really strange issues with the styling.
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 #portfolio .portfolio-item .portfolio-caption {
@@ -298,6 +349,7 @@ this can cause some really strange issues with the styling.
   background-color: #fff;
 }
 
+/* Caption under node images */
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
@@ -311,7 +363,7 @@ this can cause some really strange issues with the styling.
 }
 
 #services {
-  background-image: url("../img/other/aboutBackground.png");
+  background-image: url("../img/other/nodeBackground.png");
   background-color: rgba(245, 245, 245);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -320,24 +372,24 @@ this can cause some really strange issues with the styling.
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  padding-top: 8%;
 }
 
+@media (min-width: 100px) {
+.modal-dialog {
+  width: 100% !important;
+}
 
 #aboutSubText {
   color: white !important;
 }
 
-#firstRow {
-  padding-right: 18%;
-}
-
 #secondRow {
-  padding-left: 15%;
+  padding-right: 20%;
 }
 
-#thirdRow {
-  padding-right: 18%;
+#firstRow {
+  padding-left: 20%;
 }
 
 section#contact {
