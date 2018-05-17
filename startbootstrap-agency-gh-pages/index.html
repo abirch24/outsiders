@@ -45,13 +45,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Overview</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Our Fight</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Process</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Who We Are</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Join Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -68,18 +68,19 @@
     <header class="masthead">
       <div class="container-fluid">
         <div class="intro-text">
-          <div class = "row no-gutters">
+          <div class = "row">
             <div class = "col-md-4">
               <img id = "introLogo" src = "img/logos/logoOutline.png">
             </div>
             <div class = "col-md-8">
               <div class="intro-heading text-uppercase">Join us in our fight <br> to preserve the <br>wetlands </div>
               <div class="intro-lead-in">The Outsiders </div>
+              <!--<button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
             </div>
           </div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-          </div>
+          <a href ="#services" class = "js-scroll-trigger"><input type="image" src="img/logos/downArrow.png" name="saveForm scrollButton" class="btTxt submit js-scroll-trigger" width="70"/></a>
         </div>
+      </div>
     </header>
 
     <!-- Services -->
@@ -96,172 +97,101 @@
                   We need your help! No one is going to give us a say unless we stand up and stand together.
                   So help us gather our voice and make a stand, and as one say <b class = "bold"> “NO!”</b>
               </h2>
-              <div id="join">
-                <h1> <b>Join us on May 31st at the </h1>
-                <h1>University of Washington Bothell campus</b> </h1>
-              
-          </div>
+            </div>
+            <h1 id="join"> <b>Join us May 31st at the University of Washington Bothell campus</b> </h1>
         </div>
       </section>
 
 
-    <!-- Call to Action-->
-    <!--<section id="call">
+    <!-- Promo Video -->
+    <section id="call">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Mission Fields</h2>
-          </div>
-        </div> -->
-
-
-      <!--  <div class = "row" id = "firstRow"> -->
-
-          <!-- Trigger the Modal
-          <div class = "col-lg-6">
-            <div class = "inner">
-              <video id="myImg" class = "nodeVideos" src = "video/testVid.mov" alt="Planting Node" controls>
-              </video>
-              <div class = "playpause"></div>
-            </div>
-          </div> -->
-
-          <!-- The Modal
-          <div id="myModal" class="modal"> -->
-
-            <!-- The Close Button
-            <span class="close">&times;</span> -->
-
-            <!-- Modal Content (The Image)
-            <video class="modal-content" id="img01"> -->
-
-            <!-- Modal Caption (Image Text)
-            <div id="caption"></div>
-          </div>
-        </div> -->
-
-        <!--<div class = "row" id = "firstRow">
-          <div class = "col-lg-6">
-            <div class = "inner">
-              <video class = "nodeVideos" controls>
-                <source src = "video/testVid.mov">
-              </video>
-              <div class = "playpause"></div>
-            </div>
-          </div>
-
-          <div class = "col-lg-6">
-            <div class = "inner">
-              <video class = "nodeVideos" controls>
-                <source src = "video/testVid.mov">
-              </video>
-              <div class = "playpause"></div>
-            </div>
-          </div>
-        </div> -->
-
-        <!--<div class = "row" id = "secondRow">
-          <div class = "col-lg-6">
-            <div class = "inner">
-              <video class = "nodeVideos" controls>
-                <source src = "video/testVid.mov">
-              </video>
-              <div class = "playpause"></div>
-            </div>
-          </div>
-          <div class = "col-lg-6">
-            <div class = "inner">
-              <video class = "nodeVideos" controls>
-                <source src = "video/testVid.mov">
-              </video>
-              <div class = "playpause"></div>
-            </div>
+            <h2 class="section-heading text-uppercase">Who Are We?</h2>
           </div>
         </div>
 
-    </section> -->
+      <!--<div class="wrapper">
+        <svg class="overlay-play-button" viewBox="0 0 200 200" alt="Play video">
+          <circle cx="100" cy="100" r="90" fill="none" stroke-width="5"></circle>
+          <polygon points="70, 55 70, 145 145, 100" fill="#fff"></polygon>
+        </svg>
+        <img src="img/other/poster2.png" alt="Outsiders Video">
+        <video id="introVideo" src = "video/testVid.mov" onclick = "this.paused ? this.play() : this.pause();"> </video>
+      </div> -->
+      <video id="introVideo" src = "video/testVid.mov" poster = "img/other/poster.png" onclick = "this.paused ? this.play() : this.pause();" controls> </video>
+    </section>
 
-    <!-- Portfolio Grid -->
+    <!-- Nodes -->
     <section class="bg-light" id="portfolio">
-        <div class="row">
+        <div class="row d-flex align-items-center">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">YOU can help!</h2>
+            <h2 class="section-heading text-uppercase" id="join">Join us</h2>
           </div>
         </div>
 
-        <!-- First row: Motherbase -->
-        <div id = "motherBase">
-          <div class="row" id = "portfolioRow">
-            <div class="col-md-6 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+        <div class = "row" id="portfolioRow">
+          <!-- Posters -->
+          <div class = "col-md-3 col-sm-3 portfolio-item">
+            <div class = "nodes" id = "node3">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img id = "motherBaseImage" class="img-fluid" src="img/portfolio/baseIcon.png" alt="">
+                <img class="img-fluid" src="img/portfolio/posterIcon.png" alt="">
               </a>
-              <div class="portfolio-caption">
-                <h4>Motherbase</h4>
-                <p class="text-muted">The Control Center</p>
-              </div>
             </div>
+          </div>
 
-            <div class="col-md-6 col-sm-6 portfolio-item">
-              <!-- Planting -->
-              <div class="col-md-4 col-sm-4 portfolio-item">
-                <div class = "nodes" id = "node2">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                      <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/missionIcon.png" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                      <h4 class = "nodeText">Espionage</h4>
-                      <p class="text-muted">Be our Spy</p>
-                    </div>
+        <!-- Motherbase -->
+        <div class="col-md-3 col-sm-3 portfolio-item">
+          <div class = "nodes">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/baseIcon.png" alt="">
+            </a>
+          </div>
+        </div>
 
-            <!-- Espionage -->
-            <div class = "col-md-4 col-sm-4 portfolio-item">
-              <div class = "nodes" id = "node1">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
+        <!-- Espionage -->
+        <div class="col-md-3 col-sm-3 portfolio-item">
+          <div class = "nodes" id = "node2">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
                   </div>
-                  <img class="img-fluid" src="img/portfolio/plantingIcon.png" alt="">
-                </a>
-                <div class="portfolio-caption">
-                  <h4 class = "nodeText">Plant Center</h4>
-                  <p class="text-muted">Pot a Plant</p>
                 </div>
-              </div>
-            </div>
+                <img class="img-fluid" src="img/portfolio/missionIcon.png" alt="">
+              </a>
+          </div>
+        </div>
 
-          <!-- Posters -->
-            <div class = "col-md-4 col-sm-4 portfolio-item">
-              <div class = "nodes" id = "node3">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="img/portfolio/posterIcon.png" alt="">
-                </a>
-                <div class="portfolio-caption">
-                  <h4 class = "nodeText">Posters</h4>
-                  <p class="text-muted">Raise your Voice</p>
+        <!-- Planting -->
+        <div class = "col-md-3 col-sm-3 portfolio-item">
+          <div class = "nodes" id = "node1">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-            </div>
-         </div>
+              <img class="img-fluid" src="img/portfolio/plantingIcon.png" alt="">
+            </a>
+            <!--<div class="portfolio-caption">
+              <h4 class = "nodeText">Plant Center</h4>
+              <p class="text-muted">Pot a Plant</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Team -->
@@ -272,7 +202,6 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-              <h3 class="section-subheading text-muted">Meet the Outsiders</h3>
             </div>
           </div>
             <div class="row">
@@ -407,7 +336,6 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Please don't hesitate to ask for more information</h3>
           </div>
         </div>
         <div class="row">
@@ -497,27 +425,26 @@
               <div class="rl"></div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Motherbase</h2>
-                  <p class="item-intro text-muted">The Control Center</p>
-                  <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
-                  <p>
-                    Get recruited to join the Outsiders! Here you will learn more about our cause
-                    and be sent out on your Espionage Mission.
-                  </p>
-                  <ul class="list-inline">
-                    <li>Location: UWB Food Garden / Cascadia Trailer </li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
+          <div class="container popUpWindow">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <div class="popUpHeader">Motherbase</div>
+              <p class = "description">The Control Center</p>
+              <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
+              <p class="popUpText">Here, we would officially like to welcome you to the Outsiders!
+                 After you've created posters for our cause the Motherbase will be your official
+                 recruitment stage. Now we know you've got what it takes to be an Outsider. It is here
+                 you'll be debriefed on the Outsiders mission statement, and gear up for your Espionage
+                 Mission. NOTE: You MUST visit the Motherbase before starting your Espionage Mission!
+                 We have the necessary equipment you'll need in order to ellude Midnight Industries
+                 and succeed in the rest of your journey.
+              </p>
+              <ul class="list-inline">
+                <li class = "description">Location: UWB Food Garden / Cascadia Trailer </li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Close Project</button>
             </div>
           </div>
         </div>
@@ -533,29 +460,25 @@
               <div class="rl"></div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+          <div class="container popUpWindow">
+            <div class="modal-body">
 
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Pot a Plant</h2>
-                  <p class="item-intro text-muted">Our gift to you</p>
-                  <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
-                  <p>
-                    In order to reward you for your efforts and dedication to our cause, the Outsider would
-                    like to gift you a plant. With the seeds you gain during the Espionage Mission, you
-                    will be able to take home your own plant as a memorial of your service.
-                  <br>
-                  </p>
-                  <ul class="list-inline">
-                    <li>Location: UWB Food Garden</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
+              <!-- Project Details Go Here -->
+              <h2 class="popUpHeader">Pot a Plant</h2>
+              <p class = "description">Our gift to you</p>
+              <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
+              <p class = "popUpText">
+                To reward you for your efforts and dedication to our cause, the Outsiders would
+                like to gift you a plant. With the seeds you gain during the Espionage Mission, you
+                will be able to take home your own plant as a memorial of your service.
+              <br>
+              </p>
+              <ul class="list-inline">
+                <li class = "description">Location: UWB Food Garden</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Close Project</button>
             </div>
           </div>
         </div>
@@ -571,26 +494,24 @@
               <div class="rl"></div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Be Our Spy</h2>
-                  <p class="item-intro text-muted">Infiltrate Midnight Industries</p>
-                  <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
-                  <p>The outsiders have a mission for new recruits. Infiltrate the offices of
-                     Midnight Industries, follow your instructions to locate and scan documents
-                     about their plans to build over the wetlands against the wishes of everyone who lives here.
-                  </p>
-                  <ul class="list-inline">
-                    <li>Location: Motherbase</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
+          <div class="container popUpWindow">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="popUpHeader">Be Our Spy</h2>
+              <p class = "description">Infiltrate Midnight Industries</p>
+              <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
+              <p class = "popUpText"> After receiving your gear and supplies from the Mother Base, you will
+                 be our spy to infiltrate the offices of Midnight Industries. Your mission, should
+                 you choose to accept it, will be to locate and scan documents about Midnight Industries's
+                 plans to build over the wetlands. Midnight Industries knows our faces, so that's why we need YOU.
+                 The fate of the wetlands rests in your hands.
+              </p>
+              <ul class="list-inline">
+                <li class = "description">Location: Motherbase</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Close Project</button>
             </div>
           </div>
         </div>
@@ -606,27 +527,22 @@
               <div class="rl"></div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Raise Your Voice</h2>
-                  <p class="item-intro text-muted">Create a poster to share our message.</p>
-                  <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
-                  <p>The numbers of the outsiders are growing, and we need your help to get all
-                    our new members a way to show their support and energy. Take a poster and
-                    write a something spreading our message and mission or find advertisements
-                    from midnight industries and put our messages over theirs to show them we
-                    mean business.</p>
-                  <ul class="list-inline">
-                    <li>Location: UWB Plaza</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
+          <div class="container popUpWindow">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="popUpHeader">Raise Your Voice</h2>
+              <p class = "description">Create a poster to share our message.</p>
+              <video class = "modal-body nodeVideos" src = "video/testVid.mov" controls> </video>
+              <p class = "popUpText">The first stop of your Outsider recruitment. The numbers of the Outsiders
+                are growing, and we need your help to get all our new members a way to show their support and energy.
+                Take a poster and write something to spread our message and mission. The first step in raising our
+                voices starts here! Join the fight, raise your voice, and start your Outsider journey.</p>
+              <ul class="list-inline">
+                <li class = "description">Location: UWB Plaza</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Close Project</button>
             </div>
           </div>
         </div>

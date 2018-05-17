@@ -33,14 +33,3 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-
-// Video play/pause button
-$('.nodeVideos').parent().click(function () {
-    if($(this).children(".nodeVideos").get(0).paused){
-        $(this).children(".nodeVideos").get(0).play();
-        $(this).children(".playpause").fadeOut();
-    }else{
-       $(this).children(".nodeVideos").get(0).pause();
-        $(this).children(".playpause").fadeIn();
-    }
-});
